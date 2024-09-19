@@ -252,6 +252,7 @@ class InvoiceApp:
 
                 # Calculate GST
                 cgst = sgst = (price * quantity * gst_rate) / 200
+                
                 total_without_gst = (price * quantity)
                 grand_total = total_without_gst + cgst + sgst
 
